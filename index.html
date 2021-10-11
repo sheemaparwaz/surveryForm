@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Survey Form
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Bookworms Gather around!!!</h1>
+            <p id="description" class="description text-center">Helping our fellow bookworms around the world</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" required placeholder="Enter you email" name="email"
+                    class="form-control" />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" id="number" min="10" max="100" placeholder="Age" name="name"
+                    class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="genre">Choose your favorite Genre</label>
+
+                <select name="genre" id="dropdown" class="form-control">
+                    <option value="Literary Fiction">Literary Fiction</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Western">Western</option>
+                    <option value="Bildungsroman">Bildungsroman</option>
+                    <option value="Speculative fiction">Speculative fiction</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Dystopian">Dystopian</option>
+                    <option value="Magical Realism">Magical Realism</option>
+                    <option value="Realist Literature">Realist Literature</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How many hours do you spend reading daily?</p>
+                <label for="hoursspent">
+                    <input type="radio" name="hoursSpent" value="lessThan1" class="input-radio" checked />
+               Less than 1</label>
+               <label for="hoursspent" >
+                   <input type="radio" name="hoursSpent" value="oneToFive" class="input-radio"/>
+                1-5</label>
+                <label for="hoursspent">
+                    <input type="radio" name="hoursSpent" value="fiveToEight" class="input-radio" />
+                5-8</label>
+                <label for="hoursspent">
+                    <input type="radio" name="hoursSpent" value="moreThanEight" class="input-radio" />
+                More than 8</label>
+            </div>
+
+            <div class="form-group">
+                <p>What genres would you recommend for the readers of your age group?</p>
+
+                <label><input type="checkbox" value="Literary Fiction"  class="input-checkbox"/>Literary Fiction</label>
+                <label><input type="checkbox" value="Thriller"  class="input-checkbox"/>Thriller</label>
+                <label><input type="checkbox" value="Horror"  class="input-checkbox"/>Horror</label>
+                <label><input type="checkbox" value="Historical"  class="input-checkbox"/>Historical</label>
+                <label><input type="checkbox" value="Romance"  class="input-checkbox"/>Romance</label>
+                <label><input type="checkbox" value="Western"  class="input-checkbox"/>Western</label>
+                <label><input type="checkbox" value="Bildungsroman"  class="input-checkbox"/>Bildungsroman</label>
+                <label><input type="checkbox" value="Speculative fiction"  class="input-checkbox"/>Speculative fiction</label>
+                <label><input type="checkbox" value="Science Fiction"  class="input-checkbox"/>Science Fiction</label>
+                <label><input type="checkbox" value="Fantasy"  class="input-checkbox"/>Fantasy</label>
+                <label><input type="checkbox" value="Dystopian"  class="input-checkbox"/>Dystopian</label>
+                <label><input type="checkbox" value="Magical Realism"  class="input-checkbox"/>Magical Realism</label>
+                <label><input type="checkbox" value="Realist Literature"  class="input-checkbox"/>Realist Literature</label>
+            </div>
+            <div class="form-group">
+                <p>Name and review your favorite book for the fellow readers</p>
+                <textarea id="review"
+                class="input-textarea"
+                name="review"
+                placeholder="Review your book here!!!"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" value="Submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
